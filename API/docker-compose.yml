@@ -5,8 +5,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: laravelApp
-   # ports:
-    #  - "8000:80"
+    ports:
+      - "8008:80"
     volumes:
       - ./:/var/www/html
     depends_on:

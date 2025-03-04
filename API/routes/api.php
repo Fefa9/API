@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/prestashop/products', 'PrestashopController@index');
+
+
 Route::middleware('auth:api')->group(function () {
     Route::get('/products', 'ProductController@index');
     Route::post('/products', 'ProductController@store');
